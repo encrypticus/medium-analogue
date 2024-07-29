@@ -7,8 +7,8 @@ services:
       - "5432:5432"
     environment:
       - POSTGRES_HOST=localhost
-      - POSTGRES_USER=lesson
-      - POSTGRES_PASSWORD=lesson
-      - POSTGRES_DATABASE=lesson
+      - POSTGRES_USER=medium_clone
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DATABASE=medium_clone
     command: postgres
     restart: always
