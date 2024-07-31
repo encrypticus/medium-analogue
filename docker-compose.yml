@@ -2,6 +2,8 @@ version: '3'
 services:
   postgres:
     image: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
     container_name: medium_clone_backend
     environment:
       POSTGRES_DB: medium_clone
@@ -10,3 +12,5 @@ services:
     ports:
       - "5432:5432"
     restart: always
+volumes:
+  db_data:
